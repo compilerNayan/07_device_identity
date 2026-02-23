@@ -1,6 +1,6 @@
 #ifndef DEVICE_IDENTITY_DEVICE_TIME_SYNC_THREAD_INCLUDE_H
 #define DEVICE_IDENTITY_DEVICE_TIME_SYNC_THREAD_INCLUDE_H
 
-#include "../../internal/03-thread/01-DeviceTimeSyncThread.h"
+#include "../../internal/00-public/01-DeviceTimeSyncThread.h"
 
 #endif // DEVICE_IDENTITY_DEVICE_TIME_SYNC_THREAD_INCLUDE_H
