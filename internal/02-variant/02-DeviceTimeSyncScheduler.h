@@ -29,11 +29,7 @@ class DeviceTimeSyncScheduler final : public IDeviceTimeSyncScheduler {
     Public Bool TrySync() override {
         if (!internetStatusProvider->IsInternetConnected())
             return false;
-        ULong now = (ULong)millis();
-        if (now - lastSyncMs_ < kSyncIntervalMs)
-            return false;
         Bool ok = deviceTime->SyncTimeFromNetwork();
-        lastSyncMs_ = now;
         if (ok) {
             logger->Info(Tag::Untagged, StdString("[DeviceTimeSyncScheduler] Time synced"));
         }

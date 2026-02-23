@@ -28,9 +28,8 @@ class DeviceTimeSyncThread final : public IRunnable {
 
     Public Void Run() override {
         while (true) {
-            Val synced =deviceTimeSyncScheduler->TrySync();
+            Val synced = deviceTimeSyncScheduler->TrySync();
             if(synced) {
-                logger->Info(Tag::Untagged, StdString("[DeviceTimeSyncThread] Time synced"));
                 Thread::Sleep(6 * 60 * 60 * 1000); // 6 hours
             }
         }
