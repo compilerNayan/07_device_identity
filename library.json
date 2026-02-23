@@ -1,0 +1,26 @@
+{
+    "name": "07_device_identity",
+    "version": "1.0.0",
+    "description": "Header-only device identity library; serial number and device details",
+    "keywords": [
+      "arduino",
+      "device",
+      "identity",
+      "serial"
+    ],
+    "authors": [
+      {
+        "name": "Nayan"
+      }
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/compilerNayan/07_device_identity.git"
+    },
+    "dependencies": {
+      "03_device_connectivity": "https://github.com/compilerNayan/03_device_connectivity.git"
+    },
+    "license": "MIT",
+    "frameworks": "arduino",
+    "platforms": "*"
+  }
