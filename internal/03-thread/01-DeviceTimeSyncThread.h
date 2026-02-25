@@ -27,6 +27,7 @@ class DeviceTimeSyncThread final : public IRunnable {
     Private ULong lastRunMs_{0};
 
     Public Void Run() override {
+        Thread::Sleep(11000);
         while (true) {
             Val synced = deviceTimeSyncScheduler->TrySync();
             if(synced) {
